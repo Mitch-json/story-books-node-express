@@ -6,8 +6,8 @@ module.exports = function (passport) {
   passport.use(
     new GoogleStrategy(
       {
-        clientID: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        clientID: '170278144197-kk286n85bumnpjaidfmejsorisrjr08l.apps.googleusercontent.com',
+        clientSecret: '2kEaHls1jw8DUeDQMzoESebW',
         callbackURL: 'https://mitch-story-books.herokuapp.com/auth/google/callback',
       },
       async (accessToken, refreshToken, profile, done) => {
